@@ -1,0 +1,347 @@
+html, body {
+    padding: 0PX;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body{
+    background-color: #2b2b2b;
+}
+
+.content {
+    background-color: #2b2b2b;
+    color: rgb(246, 246, 246);
+    height: 50px;
+    animation-name: navegacao;
+    animation-duration: 1s;
+}
+
+
+.content ul {
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    height: 50px;
+}
+
+.content li{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.content a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.content a:hover {
+    color:#f27609;
+}
+
+.content li.menu {
+    display: none;
+    
+}
+
+.content li.menu:hover {
+    color: #f27609;
+    cursor: pointer;
+}
+
+.capa {
+    color: white;
+    vertical-align: top;
+
+}
+
+.capa span {
+    color: #f27609;
+    display: block;
+}
+
+.capa div {
+    display: inline-block;
+    height: auto;
+}
+
+.profile {
+    width: 40%;
+    text-align: center;
+
+    animation-name: profile-capa;
+    animation-duration: 2s;
+
+}
+
+.profile img {
+    width: 320px;
+    border-radius: 320px;
+    margin-top: 100px;
+}
+
+.titulo {
+    vertical-align: top;
+    width: 59%;
+
+    animation-name: profile-title;
+    animation-duration: 5s;
+
+}
+
+.titulo h1 {
+    font-size: 58px;
+    margin-top: 220px;
+    line-height: 54px;
+}
+
+.titulo h2 {
+    font-size: 16px;
+    font-weight: 100px;
+    margin-top: -30px;
+}
+
+.main {
+    padding-top: 80px;
+    padding-right: 180px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    animation-name: conteudo;
+    animation-duration: 5s;
+}
+
+.cv-pic {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.main h1 {
+    color: white;
+    font-weight: normal;
+}
+
+.main h2 {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.main h3 {
+    color: #f27609;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main p {
+    color: rgb(123, 123, 123);
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.caminho{
+    list-style: none;
+    padding-left: 0;
+    color: grey;
+}
+
+.caminho li {
+    display: inline-block;
+}
+
+.caminho a {
+    color: grey;
+}
+
+.social-img {
+    width: 30px;
+}
+
+.miniatura {
+    width: 320px;
+    height: 320px;
+    background-image: url("imagens/cleanfoodd.jpg");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+}
+
+.miniatura a {
+    text-decoration: none;
+}
+
+.centerh1 {
+    text-align: center;
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 120px;
+    transition: 1s;
+}
+
+.blackbox:hover {
+ opacity: 0.5;
+ transition: 1s;
+}
+
+.blacktext {
+    text-align: center;
+}
+
+.blacktext h1 {
+    font-size: 16px;
+    color: #f27609;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.blacktext h2 {
+    text-transform: none;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.fto-trabalho {
+    width: 83%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.incio a{
+    color: #f27609;
+}
+
+
+@keyframes profile-capa {
+    0% {opacity: 0}
+    100% {opacity: 100;}
+    0% {transform: translate(0px, 35px)}
+    100% {transform: translate(0px, 0px)}
+}
+
+@keyframes profile-title {
+    0% {transform: translate(0px, -35px)}
+    100% {transform: translate(0px, 0px)}
+}
+
+@keyframes navegacao {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1}
+}
+
+@keyframes conteudo {
+    0% {opacity: 0; transform: translate(-20px, 0px);}
+    100% {opacity: 1; transform: translate( 0px, 0px);}
+
+}
+
+@media (max-width: 1000px) {
+    .content li {
+        display: none;
+    }
+
+    .content li.menu {
+        display: inline-block;
+    }
+
+    .capa div{
+        display: block;
+        height: auto;
+    }
+
+    .titulo {
+        width: 100%;
+    }
+
+    .profile {
+        width: 100%;
+        
+    }
+
+    .profile img {
+        margin-top: 0;
+        max-width: 80%;
+    }
+
+    .titulo {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .titulo h1 {
+        margin-top: 30px;
+        font-size: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .titulo h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main {
+        padding: 10px 5% 40px 5%;
+    }
+
+    .main p {
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .caminho li {
+        font-size: 14px;
+    }
+
+    .cv-pic {
+        float: none;
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .miniatura {
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+
+    .blackbox {
+        opacity: 0.8;
+    }
+    
+    .menujs {
+    height: auto;
+    }
+
+    .menujs ul {
+    height: auto;
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+    }
+
+    .menujs li {
+        display: block;
+        border-bottom: solid gray 1px;
+        width: 100%;
+        padding: 0;
+    }
+}
